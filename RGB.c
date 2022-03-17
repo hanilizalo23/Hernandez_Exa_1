@@ -63,6 +63,12 @@ void yellow_on(void) /**Turn on the yellow LED*/
 	GPIO_clear_pin(GPIO_E, bit_26);
 }
 
+void cyan_on(void) /**Turn on the yellow LED*/
+{
+	GPIO_clear_pin(GPIO_B, bit_21);
+	GPIO_clear_pin(GPIO_E, bit_26);
+}
+
 void white_on(void) /**Turn on the white LED*/
 {
 	GPIO_clear_pin(GPIO_B, bit_21);
@@ -96,6 +102,12 @@ void purple_off(void) /**Turn off the purple LED*/
 void yellow_off(void) /**Turn off the yellow LED*/
 {
 	GPIO_set_pin(GPIO_B, bit_22);
+	GPIO_set_pin(GPIO_E, bit_26);
+}
+
+void cyan_off(void) /**Turn on the yellow LED*/
+{
+	GPIO_set_pin(GPIO_B, bit_21);
 	GPIO_set_pin(GPIO_E, bit_26);
 }
 

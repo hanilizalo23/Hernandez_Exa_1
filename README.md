@@ -1,2 +1,3 @@
 Examen 1 SEI
-![image](https://user-images.githubusercontent.com/91399921/158911894-89455a71-a063-4aa9-a37f-67c86a640b66.png)
+![image](https://user-images.githubusercontent.com/91399921/158913252-529df6a6-bb1b-4b76-bc91-3b5e07da4886.png)
+

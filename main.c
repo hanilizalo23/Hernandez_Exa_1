@@ -37,7 +37,7 @@ static uint8_t g_white = FALSE;
 static uint8_t g_turning = 0;
 static uint8_t g_sw3_times = 0;
 
-uint32_t (*p_color[6]) (int color) = {blue_on, green_on, red_on, yellow_on, purple_on, cyan_on};
+void (*p_color[6]) (void) = {blue_on, green_on, red_on, yellow_on, purple_on, cyan_on};
 
 int main(void)
 {
@@ -89,7 +89,7 @@ int main(void)
     		if(DELAY_FOR_GREEN <= g_turning)
     		{
     			PIT_stop(PIT_0);
-    			(*p_color[1]) (green_on);
+    			(*p_color[1]);
     			g_turning = NOTHING;
     			PIT_delay(PIT_1, SYSTEM_CLOCK, DELAY_SW3);
     		}
@@ -97,27 +97,27 @@ int main(void)
 
     	case BLUE:
     		rgb_off();
-    		(*p_color[0]) (blue_on);
+    		(*p_color[0]);
     	break;
 
     	case RED:
     		rgb_off();
-    		(*p_color[2]) (red_on);
+    		(*p_color[2]);
     	break;
 
     	case PURPLE:
     		rgb_off();
-    		(*p_color[4]) (purple_on);
+    		(*p_color[4]);
     	break;
 
     	case YELLOW:
     		rgb_off();
-    		(*p_color[3]) (yellow_on);
+    		(*p_color[3]);
     	break;
 
     	case CYAN:
     		rgb_off();
-    		(*p_color[5]) (cyan_on);
+    		(*p_color[5]);
     	break;
 
     	default:
@@ -200,7 +200,7 @@ void sw3_counter (void)
 /**Cambiamos los colores cada 500 mS*/
 void toggling_colors (void)
 {
-	if(GREEN <= state_main)
+	if(GREEN ==)
 	{
 
 	}

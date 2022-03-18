@@ -26,6 +26,6 @@ void yellow_off(void); /**Turn off the yellow LED*/
 void cyan_off(void); /**Turn off the cyan LED*/
 void white_off(void); /**Turn off the white LED*/
 
-void rgb_basic_off(void); /**Turn off the three colors of the LED*/
+void rgb_off(void); /**Turn off the three colors of the LED*/
 
 #endif /* RGB_H_ */

@@ -118,7 +118,7 @@ void white_off(void) /**Turn off the white LED*/
 	GPIO_set_pin(GPIO_E, bit_26);
 }
 
-void rgb_basic_off(void) /**Turn off the three colors of the LED*/
+void rgb_off(void) /**Turn off the three colors of the LED*/
 {
 	green_off();
 	blue_off();
